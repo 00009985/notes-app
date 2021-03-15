@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title My title
+    link(rel='stylesheet' href='/static/main.css')
+
+  body
+    header.navbar
+      h1.logo
+        a(href='/') Notes app
+
+      nav.nav
+        a(href='/notes') All notes
+        a(href='/archive') Archive
+
+    block content

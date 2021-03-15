@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+  main.container
+    h1 All notes
+
+    each val in notes
+      a.note(href=`notes/${val.id}`) #{ val.title }
